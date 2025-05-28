@@ -1,22 +1,31 @@
+/* === Connect section === */
 #connect-with-me {
   text-align: center;
   margin-top: 1em;
 }
 
-/* UCSB forest green styles */
+/* === Font === */
+body {
+  font-family: "Inter", sans-serif;
+}
+
+/* === Link colors (UCSB Forest Green) === */
 a {
-  color: #006341;
+  color: #006341 !important;
   text-decoration: none;
 }
 
 a:hover {
-  color: #004c32;
+  color: #004c32 !important;
   text-decoration: underline;
 }
 
-body {
-  font-family: "Inter", sans-serif;
+/* === Headings in Forest Green === */
+h1, h2, h3, h4 {
+  color: #006341;
 }
+
+/* === Button styles === */
 .btn-primary {
   background-color: #006341;
   border-color: #006341;
@@ -27,6 +36,13 @@ body {
   border-color: #004c32;
 }
 
-h1, h2, h3 {
-  color: #006341;
+/* === Navbar link hover === */
+.navbar-nav .nav-link:hover {
+  color: #006341 !important;
+}
+
+/* === Active nav link === */
+.navbar-nav .nav-link.active {
+  color: #006341 !important;
+  font-weight: bold;
 }
