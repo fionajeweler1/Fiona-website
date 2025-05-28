@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  title: "fiona-website"
+  navbar:
+    left:
+      - text: Home
+        href: index.qmd
+      - text: About Me
+        href: about.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Courses
+        href: courses.qmd
+      - text: Outside the Classroom
+        href: outside.qmd
+      - text: Resume/CV
+        href: resume.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
