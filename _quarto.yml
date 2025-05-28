@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "fiona-website"
+  title: "Fiona Jeweler"
   navbar:
     left:
       - text: Home
@@ -20,9 +20,11 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: flatly
     css: styles.css
     toc: true
 
 editor: visual
+output-dir: docs
+
 
