@@ -2,8 +2,36 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "fiona-website",
+    "title": "Welcome",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Fiona Jeweler\nWelcome!\nThanks for visiting my website! I’m Fiona Jeweler, and I created this site to share a little bit about myself, including my experiences these past 4 years of college and things I enjoy outside of the classroom.\nI’m originally from Northern Virginia and am currently completing my B.S. in Environmental Studies at UC Santa Barbara. I’m passionate about wildlife conservation, human-wildlife interactions, and applying data science to ecological research. I love hiking, birding, camping, and exploring new places.\nRight now, I’m working on a senior thesis that investigates how food waste management at UCSB influences raccoon foraging behavior. You can learn more about that and other projects I’ve been involved with on the Projects page!\nThis site also includes a list of courses I’ve taken at UCSB and while studying abroad in Chile and Australia, as well as a page dedicated to my favorite outdoor and travel activities.\n\n\nEducation\nB.S. Environmental Studies, with Honors (2025)\nUniversity of California, Santa Barbara\n\n\n\nConnect with me"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About Me\nThis page will include my background, education, and interests.\n\nAbout this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects\nThis page will include some of my data, research, or writing projects."
+  },
+  {
+    "objectID": "outside.html",
+    "href": "outside.html",
+    "title": "Outside the Classroom",
+    "section": "",
+    "text": "In my free time, I enjoy spending time in nature and exploring new places. Here’s a little about my hobbies and interests."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Resume",
+    "section": "",
+    "text": "Resume"
   }
 ]
