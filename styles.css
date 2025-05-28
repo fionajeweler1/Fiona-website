@@ -9,7 +9,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-/* === Link colors (UCSB Forest Green) === */
+/* === Link colors (Forest Green) === */
 a {
   color: #006341 !important;
   text-decoration: none;
@@ -36,18 +36,39 @@ h1, h2, h3, h4 {
   border-color: #004c32;
 }
 
-/* === Navbar readability update: slightly darker gray === */
+/* === Page background === */
+body {
+  background-color: #e2e6ea;
+  font-family: "Inter", sans-serif;
+}
+
+/* === Navbar styling (darker) === */
 .navbar {
-  background-color: #e2e6ea !important;  /* medium-light gray */
+  background-color: #343a40 !important; /* dark gray */
 }
 
 .navbar .navbar-brand,
 .navbar-nav .nav-link {
-  color: #006341 !important;  /* UCSB forest green */
+  color: #bdf2d2 !important;  /* light green for contrast */
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #004c32 !important;
+  color: #8de0b3 !important;
   font-weight: bold;
+}
+
+/* === Link color in body === */
+a {
+  color: #006341;
+}
+
+a:hover {
+  color: #004c32;
+}
+
+/* === Connect with me section === */
+#connect-with-me {
+  text-align: center;
+  margin-top: 1em;
 }
