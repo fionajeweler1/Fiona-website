@@ -1,1 +1,32 @@
-/* css styles */
+#connect-with-me {
+  text-align: center;
+  margin-top: 1em;
+}
+
+/* UCSB forest green styles */
+a {
+  color: #006341;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004c32;
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+.btn-primary {
+  background-color: #006341;
+  border-color: #006341;
+}
+
+.btn-primary:hover {
+  background-color: #004c32;
+  border-color: #004c32;
+}
+
+h1, h2, h3 {
+  color: #006341;
+}
