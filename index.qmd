@@ -2,7 +2,11 @@
 title: "Home"
 ---
 
+::: {style="text-align: center;"}
 # Fiona Jeweler
+:::
+
+![](images/grad.JPG){fig-align="center" width="300"}
 
 **Welcome!**\
 Thanks for visiting my website! I'm Fiona Jeweler, and I created this site to share a bit about myself, including my academic journey, research projects, and interests beyond the classroom.
