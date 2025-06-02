@@ -4,11 +4,36 @@ title: "About"
 
 # About Me
 
-This page will include my background, education, and interests.
----
+## Passion for Wildlife
 
-About this site
+My passion for wildlife runs deep. I’ve always been fascinated by the ways animals interact with their environment, and that curiosity has guided my academic focus. At UCSB, I’ve explored these interests through coursework, research, and field experiences. One of my favorite campus involvements is with **The Wildlife Society**, which has connected me with others who share my love for wildlife and conservation.
 
-```{r}
-1 + 1
-```
+![Harris Hawk seen through binoculars](images/Harris_Hawk.jpg)
+
+![Harris Hawk seen on field guide](images/bird_book.jpg)
+
+------------------------------------------------------------------------
+
+## Campus and Community Involvement
+
+Beyond academics, I’ve been deeply engaged in the UCSB and Santa Barbara communities. As an officer for **The Wildlife Society at UCSB**, I’ve helped organize events with professional wildlife biologists, led club meetings, and built a space for students to explore conservation careers. I'm also a **Bren Environmental Studies Fellow**, participating in a cohort committed to increasing diversity and inclusion in the environmental field.
+
+In addition, I work as a **worm wrangler** with UCSB’s **Associated Students Department of Public Worms**, where I manage food waste and compost production. It's been incredibly rewarding to contribute to a closed-loop food system that benefits the campus garden and student food programs.
+
+![Worms in compost from the Department of Public Worms](images/worms.jpg)
+
+Our finished compost supports the growth of produce like these vibrant tomatoes at UCSB’s Edible Campus Student Farm:
+
+![Tomatoes grown with DPW compost at the UCSB Student Farm](images/tomatoes.jpg)
+
+------------------------------------------------------------------------
+
+## Family and Friends
+
+Outside of school and work, I deeply value time with the people—and pets—I love. I’m especially close with my family in Northern Virginia and always look forward to hikes, camping trips, and board games when I’m home. Being far from our family dog, Marlo, can be tough, but the enthusiastic greeting he gives me whenever I return reminds me that I’ve never been forgotten. I’ve also built lasting friendships through UCSB, study abroad programs, and campus organizations—relationships that have been a meaningful and memorable part of my journey.
+
+![Marlo on a hike](images/IMG_3685.JPG)
+
+![Graduation photo with friends](images/friends.JPG)
+
+\
