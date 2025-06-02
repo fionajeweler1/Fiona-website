@@ -244,8 +244,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="sc">~</span><span class="fu">paste</span>(Site, <span class="st">"&lt;br&gt;"</span>, Interactions, <span class="st">"interactions"</span>)</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="leaflet html-widget html-fill-item" id="htmlwidget-11505c17cbd8bbb195fa" style="width:100%;height:464px;"></div>
-<script type="application/json" data-for="htmlwidget-11505c17cbd8bbb195fa">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[34.41553,34.412422,34.4122],[-119.84517,-119.843723,-119.848092],10,null,null,{"interactive":true,"className":"","stroke":true,"color":["red","orange","blue"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["red","orange","blue"],"fillOpacity":0.7},null,null,null,null,["Open Can &lt;br&gt; 31 interactions","Semi–Open Can &lt;br&gt; 3 interactions","Closed Can &lt;br&gt; 1 interactions"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[34.4122,34.41553],"lng":[-119.848092,-119.843723]}},"evals":[],"jsHooks":[]}</script>
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-35c1f92ff7d3ad9bbc52" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-35c1f92ff7d3ad9bbc52">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addCircleMarkers","args":[[34.41553,34.412422,34.4122],[-119.84517,-119.843723,-119.848092],10,null,null,{"interactive":true,"className":"","stroke":true,"color":["red","orange","blue"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["red","orange","blue"],"fillOpacity":0.7},null,null,null,null,["Open Can &lt;br&gt; 31 interactions","Semi–Open Can &lt;br&gt; 3 interactions","Closed Can &lt;br&gt; 1 interactions"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[34.4122,34.41553],"lng":[-119.848092,-119.843723]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <hr>
@@ -256,22 +256,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>In this example, I use R to run a chi-square test on raccoon visit frequencies to different bin types and visualize the results. This simple analysis helped me determine whether raccoons showed a preference among the different trash can designs, data that was useful to me when talking about how waste management influences raccoon behavior.</p>
 <section id="code" class="level3">
 <h3 class="anchored" data-anchor-id="code">Code</h3>
-<section id="inserting-data" class="level4">
-<h4 class="anchored" data-anchor-id="inserting-data">Inserting Data</h4>
-<p>raccoon_data &lt;- data.frame( TrashCanType = c(“Open”, “Semi-Open”, “Closed”), Interactions = c(31, 3, 1) )</p>
-</section>
-<section id="load-packages" class="level4">
-<h4 class="anchored" data-anchor-id="load-packages">Load Packages</h4>
-<p>library(ggplot2)</p>
-</section>
-<section id="barplot" class="level4">
-<h4 class="anchored" data-anchor-id="barplot">Barplot</h4>
-<p>ggplot(raccoon_data, aes(x = TrashCanType, y = Interactions, fill = TrashCanType)) + geom_bar(stat = “identity”) + labs( title = “Raccoon Interactions by Trash Can Type”, x = “Trash Can Type”, y = “Number of Interactions” ) + theme_minimal()</p>
-</section>
-<section id="chi-square-test" class="level4">
-<h4 class="anchored" data-anchor-id="chi-square-test">Chi-Square Test</h4>
-<p>chisq_test &lt;- chisq.test(raccoon_data$Interactions) chisq_test</p>
-</section>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>raccoon_data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>( <span class="at">TrashCanType =</span> <span class="fu">c</span>(<span class="st">"Open"</span>, <span class="st">"Semi-Open"</span>, <span class="st">"Closed"</span>), <span class="at">Interactions =</span> <span class="fu">c</span>(<span class="dv">31</span>, <span class="dv">3</span>, <span class="dv">1</span>) )</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Load Package</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Barplot</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(raccoon_data, </span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">x =</span> TrashCanType, </span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">y =</span> Interactions, </span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>         <span class="at">fill =</span> TrashCanType)) <span class="sc">+</span> </span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span> </span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>( </span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Raccoon Interactions by Trash Can Type"</span>, </span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Trash Can Type"</span>, </span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">"Number of Interactions"</span> ) <span class="sc">+</span> </span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="projects_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Chi-Square Test</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>chisq_test <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(raccoon_data<span class="sc">$</span>Interactions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <section id="results" class="level4">
 <h4 class="anchored" data-anchor-id="results">Results</h4>
 <p>The test compared the observed distribution of raccoon interactions to the expected distribution if raccoons had interacted equally with all three trash can types. Under this null hypothesis, each can type would be expected to have approximately 11.67 interactions (35 total interactions divided evenly across three categories).</p>
