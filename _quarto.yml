@@ -21,7 +21,7 @@ website:
     background: light
     left: Copyright 2025, Fiona Jeweler
     right: >
-      This website is built with Quarto
+      Made with Quarto
   
 format:
   html:
