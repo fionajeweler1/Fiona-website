@@ -21,16 +21,8 @@ website:
     background: light
     left: Copyright 2025, Fiona Jeweler
     right: >
-      This website is built with 
-      <i class="fas fa-heart" title="a heart"></i>, 
-      <a href="https://github.com/samanthacsik/samanthacsik.github.io" target="_blank">
-        <i class="fab fa-github" title="GitHub octocat logo"></i>
-      </a>, 
-      <a href="https://www.r-project.org/about.html" target="_blank">
-        <i class="fab fa-r-project" title="R Project"></i>
-      </a> and 
-      <a href="https://quarto.org/" target="_blank">Quarto</a>
-
+      This website is built with Quarto
+  
 format:
   html:
     theme: flatly
