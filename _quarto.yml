@@ -29,6 +29,7 @@ format:
     mainfont: Nunito
     css: styles.css
     toc: true
+    favicon: favicon.png
     include-in-header:
       - text: |
           <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
