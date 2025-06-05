@@ -84,3 +84,7 @@ a:hover {
   max-height: 100px; /* increase this value to make the logo bigger */
   width: auto;
 }
+
+.center-title {
+  text-align: center;
+}
