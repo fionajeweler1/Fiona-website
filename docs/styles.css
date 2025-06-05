@@ -81,6 +81,6 @@ a:hover {
 }
 
 .navbar-brand img {
-  max-height: 60px; /* increase this value to make the logo bigger */
+  max-height: 100px; /* increase this value to make the logo bigger */
   width: auto;
 }
