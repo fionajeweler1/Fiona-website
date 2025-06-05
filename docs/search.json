@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About Me",
-    "section": "",
-    "text": "My passion for wildlife runs deep. I’ve always been fascinated by the ways animals interact with their environment, and that curiosity has guided my academic focus. At UCSB, I’ve explored these interests through coursework, research, and field experiences. One of my favorite campus involvements is with The Wildlife Society, which has connected me with others who share my love for wildlife and conservation.\nBelow are some of my favorite pictures of wildlife that I’ve taken."
-  },
-  {
     "objectID": "about.html#passion-for-wildlife",
     "href": "about.html#passion-for-wildlife",
     "title": "About Me",
-    "section": "",
-    "text": "My passion for wildlife runs deep. I’ve always been fascinated by the ways animals interact with their environment, and that curiosity has guided my academic focus. At UCSB, I’ve explored these interests through coursework, research, and field experiences. One of my favorite campus involvements is with The Wildlife Society, which has connected me with others who share my love for wildlife and conservation.\nBelow are some of my favorite pictures of wildlife that I’ve taken."
+    "section": "Passion for Wildlife",
+    "text": "Passion for Wildlife\nMy passion for wildlife runs deep. I’ve always been fascinated by the ways animals interact with their environment, and that curiosity has guided my academic focus. At UCSB, I’ve explored these interests through coursework, research, and field experiences. One of my favorite campus involvements is with The Wildlife Society, which has connected me with others who share my love for wildlife and conservation.\nBelow are some of my favorite pictures of wildlife that I’ve taken."
   },
   {
     "objectID": "about.html#campus-and-community-involvement",
@@ -49,18 +42,11 @@
     "text": "Example Code Project: Chi-Square Test and Visualization\nIn this example, I use R to create a barplot run a chi-square test on raccoon visit frequencies to different bin types and visualize the results. This simple analysis helped me determine whether raccoons showed a preference among the different trash can designs, data that was useful to me when talking about how waste management influences raccoon behavior.\n\nCode\n\n# Data\nraccoon_data &lt;- data.frame( TrashCanType = c(\"Open\", \"Semi-Open\", \"Closed\"), Interactions = c(31, 3, 1) )\n\n#Load Package\nlibrary(ggplot2)\n\n#Barplot\nggplot(raccoon_data, \n       aes(\n         x = TrashCanType, \n         y = Interactions, \n         fill = TrashCanType)) + \n  geom_bar(stat = \"identity\") + \n  labs( \n    title = \"Raccoon Interactions by Trash Can Type\", \n    x = \"Trash Can Type\", \n    y = \"Number of Interactions\" ) + \n  theme_minimal()\n\n\n\n\n\n\n\n# Chi-Square Test\nchisq_test &lt;- chisq.test(raccoon_data$Interactions)\n\n\nResults\nThis barplot shows the difference in interactions by trash can type. The open site had 31 interactions, the semi-open had three and the closed has just one.\nThe test compared this observed distribution of raccoon interactions to the expected distribution if raccoons had interacted equally with all three trash can types. Under this null hypothesis, each can type would be expected to have approximately 11.67 interactions (35 total interactions divided evenly across three categories).\nThe chi-square analysis yielded a test statistic of χ²(2, N = 35) = 48.22, with a p-value &lt; 0.0001. This result indicates a highly significant difference between observed and expected values, providing strong evidence that raccoon interactions at each site are not evenly distributed, and that trash can design plays a role in raccoon interaction with food waste."
   },
   {
-    "objectID": "courses.html",
-    "href": "courses.html",
-    "title": "Coursework",
-    "section": "",
-    "text": "As a Bachelor of Science student in Environmental Studies at UC Santa Barbara, I’ve developed a strong foundation in the natural and physical sciences, along with a deep understanding of the social and cultural dimensions of environmental issues.\nLower Division Coursework:\n\nGeneral Chemistry Series with Lab\nIntroductory Biology and Ecology Series with Lab\nCalculus I and II\nGeneral Physics Series with Lab\n\nThese courses built my core scientific literacy, preparing me to understand ecological systems, biological processes, and the physical principles driving environmental change.\nUpper Division Coursework:\n\nUrban Planning and Sustainable Communities\nCreating a Low Carbon Society\nFood and Agriculture: Cultivating Environmentalism\nNatural History and Ecology of the Channel Islands\nEnvironmental Statistics\nConservation Planning\n\nThese advanced courses sharpened my understanding of climate solutions, sustainable food systems, biodiversity, and analytical tools used in environmental decision-making.\nGIS and Applied Learning:\n\nIntroduction to GIS\nAdvanced GIS and Spatial Analysis\nEnvironmental Leadership Incubator (Year-long Project-Based Course)\n\nFor my final project, I designed and planted a native garden at North Campus Open Space aimed at improving habitat for local bat species."
-  },
-  {
     "objectID": "courses.html#ucsb-courses",
     "href": "courses.html#ucsb-courses",
     "title": "Coursework",
-    "section": "",
-    "text": "As a Bachelor of Science student in Environmental Studies at UC Santa Barbara, I’ve developed a strong foundation in the natural and physical sciences, along with a deep understanding of the social and cultural dimensions of environmental issues.\nLower Division Coursework:\n\nGeneral Chemistry Series with Lab\nIntroductory Biology and Ecology Series with Lab\nCalculus I and II\nGeneral Physics Series with Lab\n\nThese courses built my core scientific literacy, preparing me to understand ecological systems, biological processes, and the physical principles driving environmental change.\nUpper Division Coursework:\n\nUrban Planning and Sustainable Communities\nCreating a Low Carbon Society\nFood and Agriculture: Cultivating Environmentalism\nNatural History and Ecology of the Channel Islands\nEnvironmental Statistics\nConservation Planning\n\nThese advanced courses sharpened my understanding of climate solutions, sustainable food systems, biodiversity, and analytical tools used in environmental decision-making.\nGIS and Applied Learning:\n\nIntroduction to GIS\nAdvanced GIS and Spatial Analysis\nEnvironmental Leadership Incubator (Year-long Project-Based Course)\n\nFor my final project, I designed and planted a native garden at North Campus Open Space aimed at improving habitat for local bat species."
+    "section": "UCSB Courses",
+    "text": "UCSB Courses\nAs a Bachelor of Science student in Environmental Studies at UC Santa Barbara, I’ve developed a strong foundation in the natural and physical sciences, along with a deep understanding of the social and cultural dimensions of environmental issues.\nLower Division Coursework:\n\nGeneral Chemistry Series with Lab\nIntroductory Biology and Ecology Series with Lab\nCalculus I and II\nGeneral Physics Series with Lab\n\nThese courses built my core scientific literacy, preparing me to understand ecological systems, biological processes, and the physical principles driving environmental change.\nUpper Division Coursework:\n\nUrban Planning and Sustainable Communities\nCreating a Low Carbon Society\nFood and Agriculture: Cultivating Environmentalism\nNatural History and Ecology of the Channel Islands\nEnvironmental Statistics\nConservation Planning\n\nThese advanced courses sharpened my understanding of climate solutions, sustainable food systems, biodiversity, and analytical tools used in environmental decision-making.\nGIS and Applied Learning:\n\nIntroduction to GIS\nAdvanced GIS and Spatial Analysis\nEnvironmental Leadership Incubator (Year-long Project-Based Course)\n\nFor my final project, I designed and planted a native garden at North Campus Open Space aimed at improving habitat for local bat species."
   },
   {
     "objectID": "courses.html#chile-courses",
