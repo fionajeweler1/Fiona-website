@@ -80,3 +80,7 @@ a:hover {
   height: 300px;
 }
 
+.navbar-brand img {
+  height: 48px; /* Increase this number as needed */
+  margin-right: 10px;
+}
